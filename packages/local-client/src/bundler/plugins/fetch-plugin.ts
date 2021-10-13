@@ -38,8 +38,7 @@ export const fetchPlugin = (input: string) => {
                     .replace(/"/g, '\\"')
                     .replace(/'/g, "\\'");
 
-                const contents =
-                        `
+                const contents = `
                             const style = document.createElement('style');
                             style.innerText = '${escaped}';
                             document.head.appendChild(style);
