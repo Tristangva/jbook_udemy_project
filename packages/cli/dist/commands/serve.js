@@ -42,7 +42,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.serveCommand = void 0;
 var path_1 = __importDefault(require("path"));
 var commander_1 = require("commander");
-var local_api_1 = require("local-api");
+var local_api_1 = require("@jsnote_tristangva/local-api");
 var isProduction = process.env.NODE_ENV === 'production';
 // serve command + args
 // Commander lets these be in any order
@@ -67,8 +67,8 @@ exports.serveCommand = new commander_1.Command()
                     return [3 /*break*/, 3];
                 case 2:
                     err_1 = _a.sent();
-                    if (err_1.code === 'EADDINUSE') {
-                        console.log("Port in use. try running on different port");
+                    if (err_1.code === 'EADDRINUSE') {
+                        console.error('Port is in use. Try running on a different port.');
                     }
                     else {
                         console.log('Here is the problem', err_1.message);
