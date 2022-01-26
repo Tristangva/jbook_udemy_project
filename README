@@ -1,12 +1,15 @@
 Jbook project created for a Udemy class
 Credit to Stephen Grider and his course React and Typescript: Build a Portfolio Project
 
-I chose to not use NPM to deploy the project as was instructed because there would be to many similar names
+I chose to not use NPM in the long run to deploy the project as was instructed because there would be to many similar names
 
-This for now prevents the saving and loading function from working properly.
+However for now I will use it
 
-Will format later
 
 How to use:
 
+Install with: `npm `
+
 Run site with `lerna run start`
+
+Remake with `lerna start`

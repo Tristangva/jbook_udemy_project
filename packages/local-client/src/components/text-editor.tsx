@@ -41,7 +41,7 @@ const TextEditor: React.FC<TextEditorProps> = ({cell}) => {
             </div>
         )
     }
-
+    // find some way to launch with different text once
     return (
         <div className={"text-editor card"} onClick={()=> setEditing(true)}>
             <div className={"card-content"}>
